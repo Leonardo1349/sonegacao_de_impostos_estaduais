@@ -25,7 +25,7 @@ def criarModelo(modelo, base01, alvo):
 def importarModelo(modeloEscolhido):
     url = 'streamlit/predicao_sem_historico_das_empresas/base01/dataset_sem_coluna_empresa.csv'
     alvo = 'IMPOSTOS_ESTADUAIS'
-    base01 = pd.read_excel(url, engine="openpyxl")
+    base01 = pd.read_csv(url, engine="openpyxl")
     
     dados = {
     'RECEITA_VENDAS_BENS_OU_SERVICOS': RECEITA_VENDAS_BENS_OU_SERVICOS,
