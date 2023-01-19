@@ -28,7 +28,6 @@ def importarModelo(modeloEscolhido):
     base01 = pd.read_excel(url, engine="openpyxl")
     
     dados = {
-
     'RECEITA_VENDAS_BENS_OU_SERVICOS': RECEITA_VENDAS_BENS_OU_SERVICOS,
     'CUSTO_DOS_BENS_OU_SERVICOS_VENDIDOS': CUSTO_DOS_BENS_OU_SERVICOS_VENDIDOS,
     'DESPESAS_RECEITAS_OPERACIONAIS': DESPESAS_RECEITAS_OPERACIONAIS,
@@ -103,8 +102,7 @@ distribuicao_do_valor_adicionado_value = st.number_input('Qual o valor da Distri
 distribuicao_do_valor_adicionado = distribuicao_do_valor_adicionado_value.get(distribuicao_do_valor_adicionado_value)
 
 
- dados = {
-
+dados = {
     'RECEITA_VENDAS_BENS_OU_SERVICOS': RECEITA_VENDAS_BENS_OU_SERVICOS,
     'CUSTO_DOS_BENS_OU_SERVICOS_VENDIDOS': CUSTO_DOS_BENS_OU_SERVICOS_VENDIDOS,
     'DESPESAS_RECEITAS_OPERACIONAIS': DESPESAS_RECEITAS_OPERACIONAIS,
